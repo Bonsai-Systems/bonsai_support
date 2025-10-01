@@ -4,7 +4,6 @@ A lightweight WordPress plugin that adds a branded support widget to the WordPre
 Provides quick access to the Bonsai Digital Collective Help Centre and support request form.
 
 ![WordPress](https://img.shields.io/badge/WordPress-%5E6.0-blue)
-![License: GPL v2](https://img.shields.io/badge/License-GPLv2-blue.svg)
 
 ---
 
@@ -61,12 +60,6 @@ A: Yes — edit the URLs inside the plugin’s main function, or fork this repo 
 - Built to be lightweight and DRY.  
 - Uses modern WordPress best practices.  
 - Inline styles are minimal for simplicity. If desired, enqueue custom admin CSS for more control.  
-
----
-
-## License
-
-This plugin is licensed under the [GPL v2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) or later.
 
 ---
 
