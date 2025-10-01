@@ -42,6 +42,10 @@ Yes — edit the URLs inside the plugin’s main function, or fork this plugin w
 
 == Changelog ==
 
+= 1.2 (2025-10-01)
+* Updated to 'The Bonsai Digital Collective Help Centre'
+* Updated spellings on centre
+
 = 1.1.1 (2025-10-01) =
 * Refactored widget callbacks to use prefixed/anonymous functions.
 * Fixed fatal errors caused by duplicate global function names (e.g. `custom_dashboard_help`).
