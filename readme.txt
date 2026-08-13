@@ -5,7 +5,7 @@ Tags: support, dashboard, help, client, widget
 Requires at least: 6.0
 Tested up to: 6.6
 Requires PHP: 7.4
-Stable tag: 1.1.1
+Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,6 +22,8 @@ This plugin adds a custom dashboard widget to the WordPress admin area with:
 
 The widget helps ensure clients always know where to go for help, while keeping the WordPress dashboard clean and simple.
 
+As of 2.0.0, the plugin self-updates from GitHub releases via the wp-admin Plugins screen.
+
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/` directory, or install via the WordPress admin "Plugins → Add New".
@@ -30,11 +32,14 @@ The widget helps ensure clients always know where to go for help, while keeping 
 
 == Frequently Asked Questions ==
 
-= Who can see the support widget? =  
+= Who can see the support widget? =
 By default, all WordPress users with Dashboard access. You can restrict it further by editing the plugin and adding a capability check (e.g. `current_user_can('manage_options')`).
 
-= Can I customise the links or banner? =  
-Yes — edit the URLs inside the plugin’s main function, or fork this plugin with your own settings.
+= Can I customise the links or banner? =
+Yes — edit the URLs inside the plugin's main function, or fork this plugin with your own settings.
+
+= How do updates work? =
+The plugin checks the `gakdesign/bonsai_support` GitHub repo's releases and offers updates directly in wp-admin.
 
 == Screenshots ==
 
@@ -42,7 +47,11 @@ Yes — edit the URLs inside the plugin’s main function, or fork this plugin w
 
 == Changelog ==
 
-= 1.2 (2025-10-01)
+= 2.0.0 (2026-08-13) =
+* Wired up YahnisElsts/plugin-update-checker (via Composer) so the plugin can self-update from GitHub releases via the wp-admin Plugins screen, matching bonsai-code-injector.
+* Requires PHP bumped to 7.4 to match the composer dependency's minimum.
+
+= 1.2 (2025-10-01) =
 * Updated to 'The Bonsai Digital Collective Help Centre'
 * Updated spellings on centre
 
@@ -60,6 +69,9 @@ Yes — edit the URLs inside the plugin’s main function, or fork this plugin w
 * Added support widget with banner and Help Centre links.
 
 == Upgrade Notice ==
+
+= 2.0.0 =
+Adds self-update support via GitHub releases. No changes to widget behaviour.
 
 = 1.1.1 =
 Important fix for fatal errors caused by duplicate function names. Upgrade recommended.
