@@ -41,7 +41,7 @@ require_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $bdc_support_update_checker = PucFactory::buildUpdateChecker(
-	'https://github.com/gakdesign/bonsai_support',
+	'https://github.com/Bonsai-Systems/bonsai_support',
 	__FILE__,
 	'bonsai-support',
 	6
