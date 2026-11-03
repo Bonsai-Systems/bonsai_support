@@ -12,7 +12,7 @@ Provides quick access to the Bonsai Digital Collective Help Centre and support r
 This plugin adds a custom dashboard widget to the WordPress admin area with:
 
 - A branded header/banner
-- Links to the [Bonsai Digital Collective Help Centre](https://bonsaidigitalcollective.zendesk.com/hc/en-gb)
+- Links to the [Bonsai Digital Collective Help Centre](https://support.bonsaidigitalcollective.co.uk/)
 - Direct access to submit new support requests
 - Friendly support messaging for clients and site managers
 

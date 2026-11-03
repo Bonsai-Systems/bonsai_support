@@ -5,7 +5,7 @@ Tags: support, dashboard, help, client, widget
 Requires at least: 6.0
 Tested up to: 6.6
 Requires PHP: 7.4
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,6 +47,9 @@ The plugin checks the `gakdesign/bonsai_support` GitHub repo's releases and offe
 
 == Changelog ==
 
+= 2.0.1 (2026-11-03) =
+* Help Centre and support request links now point to support.bonsaidigitalcollective.co.uk instead of Zendesk.
+
 = 2.0.0 (2026-08-13) =
 * Wired up YahnisElsts/plugin-update-checker (via Composer) so the plugin can self-update from GitHub releases via the wp-admin Plugins screen, matching bonsai-code-injector.
 * Requires PHP bumped to 7.4 to match the composer dependency's minimum.
@@ -69,6 +72,9 @@ The plugin checks the `gakdesign/bonsai_support` GitHub repo's releases and offe
 * Added support widget with banner and Help Centre links.
 
 == Upgrade Notice ==
+
+= 2.0.1 =
+Updates the support links to the new Bonsai support site.
 
 = 2.0.0 =
 Adds self-update support via GitHub releases. No changes to widget behaviour.

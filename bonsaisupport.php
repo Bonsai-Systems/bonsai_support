@@ -3,7 +3,7 @@
  * Plugin Name: The Bonsai Digital Collective Support Widget
  * Plugin URI:  https://bonsaidigitalcollective.co.uk/
  * Description: Adds the Bonsai Digital support widget to the WordPress Dashboard.
- * Version:     2.0.0
+ * Version:     2.0.1
  * Author:      Ben Ervine / The Bonsai Digital Collective
  * Author URI:  https://bonsaidigitalcollective.co.uk/
  * Requires at least: 6.0
@@ -14,6 +14,7 @@
 
 /*
 -------------------------------------------------------------
+Update 2026-11-03: Help Centre links moved to support.bonsaidigitalcollective.co.uk
 Update 2026-08-13: Self-Update System
 - Wired up YahnisElsts/plugin-update-checker (via Composer) so the plugin
   can self-update from GitHub releases via the wp-admin Plugins screen,
@@ -49,7 +50,7 @@ $bdc_support_update_checker = PucFactory::buildUpdateChecker(
 $bdc_support_update_checker->setBranch( 'main' );
 $bdc_support_update_checker->getVcsApi()->enableReleaseAssets();
 
-define( 'BDC_SUPPORT_VERSION', '2.0.0' );
+define( 'BDC_SUPPORT_VERSION', '2.0.1' );
 
 add_action(
 	'wp_dashboard_setup',
@@ -59,8 +60,8 @@ add_action(
 			'The Bonsai Digital Collective Help Centre',
 			function () {
 				$banner = esc_url( 'https://bonsaidigitalcollective.co.uk/support-banner.jpg' );
-				$hc     = esc_url( 'https://bonsaidigitalcollective.zendesk.com/hc/en-gb' );
-				$req    = esc_url( 'https://bonsaidigitalcollective.zendesk.com/hc/en-gb/requests/new' );
+				$hc     = esc_url( 'https://support.bonsaidigitalcollective.co.uk/' );
+				$req    = esc_url( 'https://support.bonsaidigitalcollective.co.uk/submit-a-request/' );
 
 				echo '<div style="margin: -12px -12px 0 -12px;">
 					<img src="' . $banner . '" alt="Bonsai Digital Support" style="width:100%;height:auto;">
